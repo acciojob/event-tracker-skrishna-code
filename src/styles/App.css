@@ -1,1 +1,113 @@
 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #252b36;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 22px;
+  border-radius: 5px;
+  background: #2867d7;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.calendar {
+  margin-bottom: 24px;
+}
+
+.creation-form,
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.creation-form {
+  max-width: 450px;
+  margin: 30px auto 0;
+  padding: 20px;
+  border: 1px solid #e1e5ec;
+  border-radius: 8px;
+}
+
+.creation-form input,
+.editor input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccd2dc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.mm-popup__btn {
+  padding: 10px 18px;
+  border: none;
+  background: #2867d7;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editor-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.editor {
+  width: 90%;
+  max-width: 420px;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.editor-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.create-btn {
+  display: block;
+  margin: 20px auto;
+}
